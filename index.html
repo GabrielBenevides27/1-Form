@@ -4,60 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulário</title>
+    <title>Form-Livro-Notas</title>
 </head>
 <body>
-    <form action="LivroDeNotas"></form>
-        <fieldset>
-            <h1>Livro de Notas</h1>
-            Simples livro de notas online é útil para registrar e gerenciar as notas e lições dos estudantes online.<br><br>
-            __________________________________________________________________________________________________________________________________________________________________<br><br>
-            Nome do Estudante 
-            <input type="name" name="nome" placeholder="Nome">
-            <input type="name" name="SobreNome" placeholder="Último"><br><br>
 
-            Formulário
-            <input type="text" name="formulário"><br><br>
+    <div>
+        <h1>Livro de Notas</h1>
+        <p>Simples livro de notas online é útil para registrar e gerenciar as notas e lições dos estudantes online.</p>
+        <br>
+    </div>
+ 
+    <form class="formulario">
+        <div>
+            <label for="nome" for="sobrenome">Nome do Estudante</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Último">
+        </div>
 
-            # ID do Estudante 
-            <input type="number"name="idestudante"><br><br>
+        <div>
+            <br>
+            <label for="form">Formulário</label>
+            <input type="text" name="form" id="form">
+        </div>
 
-            Título da tarefa 
-           <input type="text"name="título"><br><br>
+        <div>
+            <br>
+            <label for="id"># ID do Estudante</label>
+            <input type="text" name="is" id="id">
+        </div>
 
-            Status da Tarefa
-            <select name="Status">
-            <option value="Completo" autofocus>Completo</option>
-            <option value="Incompleto">Incompleto</option>
-            </select><br><br>
+        <div>
+            <br>
+            <label for="tituloTarefa">Título da tarefa</label>
+            <input type="text" name="tituloTarefa" id="tituloTarefa" >
+        </div>
 
-            Nota
-            <input type="text" name="nota" id=""><br><br>
+        <div>
+            <br>
+            <label for="status">Status da Tarefa</label>
+            <input type="text" name="status" id="status" placeholder="Completa">
+        </div>
 
-            Comentários e Menções
-            <textarea name="comentários" id="" cols="30" rows="10"></textarea>> <br><br>
+        <div>
+            <br>
+            <label for="nota">Notas</label>
+            <input type="text" name="nota" id="nota" >
+        </div>
 
-            <input type="submit" value="Enviar">
-        </fieldset>
-    </form>
+        <div>
+            <br>
+            <label for="comentarios">Comentários e menções</label>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="4"></textarea>
+        </div>
 
-    <form action="FormulárioDeEmprego">
-        <fieldset>
-            <h1>Formulário de Candidatura de Emprego</h1>
-            Obrigado pelo seu interesse em trabalhar conosco. Por favor, confira abaixo as oportunidades de trabalho <br>
-            disponíveis, que atendem aos seus críterios e envie sua candidatura preenchendo o Formulário de <br>
-            Candidatura de Emprego.<br>
-            __________________________________________________________________________________________________________________________________________________________________<br><br>
-
-            Nome* 
-            <input type="name" name="nome" required placeholder="Nome">
-            <input type="name" name="sobrenome" required placeholder="Último"><br><br>
-
-            E-mail*
-            <input type="email" name="email" required>
-
-
-        </fieldset>
+        <br>
+        <button class="botao" type="submit">Concluído</button>
     </form>
 </body>
 </html>
